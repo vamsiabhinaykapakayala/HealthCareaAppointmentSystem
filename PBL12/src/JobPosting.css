@@ -1,0 +1,353 @@
+/* JobPosting.css (or Cancer.css if you renamed it) */
+
+/* Center the profile container on the page */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* Optional: change if needed */
+}
+
+/* Main container for profile info */
+.profile-info-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 350px;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.profile-info-container h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+/* Each item row */
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+.info-item label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Value styling */
+.info-item span {
+  color: #555;
+  word-break: break-word;
+}
+
+
+
+
+ .section-title {
+  color: #007bff;
+  margin-bottom: 20px;
+  text-align: center;
+ }
+
+ .booking-info {
+  margin-bottom: 20px;
+  text-align: center;
+ }
+
+ .book-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+ }
+
+ .doctor-name {
+  color: #555;
+  font-style: italic;
+ }
+
+ .book-appointment-button {
+  text-align: center;
+  margin-top: 30px;
+ }
+
+ .book-appointment-button .submit-btn {
+  background-color: #28a745; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 25px;
+  transition: background-color 0.3s ease;
+
+ }
+
+ .book-appointment-button .submit-btn:hover {
+  background-color: #218838;
+ }
+
+ .selected-info {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+ }
+
+ .date-time-selection {
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+
+ .date-picker-section {
+  margin-bottom: 10px; /* Adjust if needed */
+ }
+
+ .date-picker-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+ }
+
+ .date-picker-section input[type='date'] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+ }
+
+ .slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+ }
+
+ .slot-btn {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+ }
+
+ .slot-btn:hover {
+  background-color: #eee;
+ }
+
+ .slot-btn.selected {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+ }
+
+ .submit-section {
+  text-align: center;
+  margin-top: 20px; /* Add some space before the final submit button */
+ }
+
+ .submit-btn {
+  padding: 12px 25px;
+  background-color: #007bff; /* Default blue for the second submit button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+ }
+
+ .submit-btn:hover {
+  background-color: #0056b3;
+ }
+
+ .right-panel {
+  flex: 1;
+  padding: 20px;
+ }
+
+ /* Popup Styles */
+ .popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001; /* Higher than modal */
+ }
+
+ .popup-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+ }
+
+ .popup-content h3 {
+  color: #007bff;
+  margin-bottom: 20px;
+ }
+
+ .popup-content label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+ }
+
+ .popup-content select,
+ .popup-content input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+ }
+
+ .popup-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+ }
+
+ .popup-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+ }
+
+ .popup-buttons button:first-child {
+  background-color: #28a745;
+  color: white;
+ }
+
+ .popup-buttons button:first-child:hover:enabled {
+  background-color: #218838;
+ }
+
+ .popup-buttons button:first-child:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+ }
+
+ .popup-buttons button:last-child {
+  background-color: #dc3545;
+  color: white;
+ }
+
+ .popup-buttons button:last-child:hover {
+  background-color: #c82333;
+ }
+
+ /* Modal Styles */
+ .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+ }
+
+ .modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+ }
+
+ .modal-content h3 {
+  color: #007bff;
+  margin-bottom: 20px;
+  text-align: center;
+ }
+
+ .modal-content label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+ }
+
+ .modal-content input[type='text'],
+ .modal-content select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+ }
+
+ .modal-content input[type='text']:read-only {
+  background-color: #eee;
+  cursor: not-allowed;
+ }
+
+ .modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+ }
+
+ .modal-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+ }
+
+ .modal-buttons button:first-child {
+  background-color: #28a745;
+  color: white;
+ }
+
+ .modal-buttons button:first-child:hover {
+  background-color: #218838;
+ }
+
+ .modal-buttons button:last-child {
+  background-color: #dc3545;
+  color: white;
+ }
+
+ .modal-buttons button:last-child:hover {
+  background-color: #c82333;
+ }
